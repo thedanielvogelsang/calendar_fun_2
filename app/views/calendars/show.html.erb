@@ -10,12 +10,126 @@
   </ul>
 </div>
 <div class="calendar-body">
+  <table class="weekend-table">
+    <tr>
+      <th>Sun</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Sun" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
   <table class="weekday-table">
     <tr>
       <th>Mon</th>
     </tr>
     <% @calendar.days.map do |d| %>
     <% if d.day == "Mon" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Tue</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Tue" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Wed</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Wed" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Thu</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Thu" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Fri</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Fri" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekend-table">
+    <tr>
+      <th>Sat</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Sat" %>
     <tr>
       <td>
         <h4><%= d.date %><h4>
