@@ -1,3 +1,6 @@
+This is a rails app that uses jquery and javascript to emulate a calendar
+
+
 Use the following commands to get the app set up:
 
 ```
