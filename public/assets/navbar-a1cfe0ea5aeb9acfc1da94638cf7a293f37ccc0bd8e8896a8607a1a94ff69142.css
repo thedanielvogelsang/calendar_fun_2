@@ -1,0 +1,55 @@
+.nav-left-buttons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-left-buttons li.cls-icon{
+  float: left;
+  padding: 5px 3px;
+}
+
+.nav-left-buttons li.calendar-btn{
+  float: left;
+  padding: 0px 3px;
+}
+
+.nav-left-buttons li{
+  float: left;
+}
+
+.close-icons{
+  list-style-type: none;
+}
+
+.red-close{
+  display: block;
+  background-color: rgb(245,74,64);
+}
+.green-close{
+  display: block;
+  background-color: rgb(31,198,67);
+}
+.yellow-close{
+  display: block;
+  background-color: rgb(245,153,54);
+}
+
+.close-icon{
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(187,186,187);
+  border-radius: 7px;
+}
+
+.cls-icon{
+  padding: 5px;
+  margin-top: 2px;
+}
+
+#plus-btn-nav{
+  margin-top: 4px;
+  width: 27px;
+  height: 25px;
+}

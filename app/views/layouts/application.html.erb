@@ -3,14 +3,29 @@
   <head>
     <title>CalendarFun2</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'navbar' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav>
-      
+    <nav id="navbar">
+      <ul class="nav-left-buttons">
+        <li>
+          <ul class="close-icons">
+            <li class="cls-icon"><div class="close-icon red-close"></div></li>
+            <li class="cls-icon"><div class="close-icon yellow-close"></div></li>
+            <li class="cls-icon"><div class="close-icon green-close"></div></li>
+          </ul>
+        </li>
+        <li class="calendar-btn">
+          <button type="button" id="calendar-btn-nav" onclick="alert('Youre using the Calendar!')">
+            Calendars
+          </button>
+        </li>
+        <li class="calendar-btn">
+          <%= image_tag("plusButton", :id => "plus-btn-nav")%>
+        </li>
     </nav>
     <%= yield %>
   </body>
