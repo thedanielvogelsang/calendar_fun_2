@@ -1,0 +1,128 @@
+body{
+  margin: 10px;
+}
+.calendar-body{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+table{
+  display: table;
+  float: left;
+  text-align: right;
+  margin: 0px;
+}
+.weekend-table{
+  background-color: rgb(245,245,245)
+}
+.weekend-cell{
+  color: rgb(170,170,170);
+}
+tr{
+  vertical-align: top;
+  max-height: 120px;
+  min-height: 120px;
+}
+td{
+  border: 1px solid rgb(187,186,187);
+  min-width: 120px;
+  max-width: 120px;
+  height: 150px;
+  overflow: hidden;
+  margin: auto;
+  padding: 2px 5px;
+}
+
+th{
+  background-color: rgb(254,254,254);
+}
+
+p{
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+.red{
+  background-color: #ff8080;
+}
+
+.blue{
+  background-color: #05A4E8;
+}
+
+.purple{
+  background-color: #E633FF;
+}
+
+#event-form-window{
+  display: none;
+  /* margin-top: 30px;
+  margin-left: 50px; */
+  height: 180px;
+  width: 400px;
+  padding-top: 0px;
+  background-color: rgb(237,238,239);
+  border: 2px solid rgb(187,186,187);
+  border-radius: 20px;
+}
+
+#event-form{
+  padding: 12px;
+  font-size: 12px;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#event-title{
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+#event-location{
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+#event-color{
+  position: absolute;
+  height: 25px;
+  bottom: 8;
+  left: 5;
+}
+
+#submit-btn{
+  font-size: 14px;
+}
+
+.time-s{
+  margin:0;
+  padding:0;
+  display: inline-block;
+  margin-left: 3px;
+  padding-left: 3px;
+  margin-right: 5px;
+}
+.time-e{
+  margin:0;
+  padding:0;
+  display: inline-block;
+  margin-left: 3px;
+  padding-left: 3px;
+  margin-right: 10px;
+}
+
+.event-date{
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.color-opt{
+  height: 3px;
+  width: 3px;
+}
