@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409001148) do
+ActiveRecord::Schema.define(version: 20180409002519) do
 
   create_table "calendars", force: :cascade do |t|
     t.string "month"
@@ -27,6 +27,18 @@ ActiveRecord::Schema.define(version: 20180409001148) do
     t.datetime "updated_at", null: false
     t.integer "calendar_id"
     t.index ["calendar_id"], name: "index_days_on_calendar_id"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.string "location"
+    t.string "color"
+    t.string "start_time"
+    t.string "end_time"
+    t.integer "day_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["day_id"], name: "index_events_on_day_id"
   end
 
 end
