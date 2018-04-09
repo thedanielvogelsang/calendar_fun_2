@@ -9,3 +9,138 @@
     <li class='month-changer'><%= link_to ">", calendar_path(@calendar.id + 1), :class => 'month-changer-link' %></li>
   </ul>
 </div>
+<div class="calendar-body">
+  <table class="weekend-table">
+    <tr class="weekend-cell">
+      <th>Sun</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Sun" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Mon</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Mon" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events[0..1].map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Tue</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Tue" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Wed</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Wed" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Thu</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Thu" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekday-table">
+    <tr>
+      <th>Fri</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Fri" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+  <table class="weekend-table">
+    <tr class="weekend-cell">
+      <th>Sat</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Sat" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p class="<%= e.color %>"> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+</div>

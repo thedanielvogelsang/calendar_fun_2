@@ -1,0 +1,58 @@
+body{
+  margin: 10px;
+}
+.calendar-body{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+table{
+  display: table;
+  float: left;
+  text-align: right;
+  margin: 0px;
+}
+.weekend-table{
+  background-color: rgb(245,245,245)
+}
+.weekend-cell{
+  color: rgb(170,170,170);
+}
+tr{
+  vertical-align: top;
+  max-height: 120px;
+  min-height: 120px;
+}
+td{
+  border: 1px solid rgb(187,186,187);
+  min-width: 120px;
+  max-width: 120px;
+  height: 150px;
+  overflow: hidden;
+  margin: auto;
+  padding: 2px 5px;
+}
+
+th{
+  background-color: rgb(254,254,254);
+}
+
+p{
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+.red{
+  background-color: #ff8080;
+}
+
+.blue{
+  background-color: #05A4E8;
+}
+
+.purple{
+  background-color: #E633FF;
+}
