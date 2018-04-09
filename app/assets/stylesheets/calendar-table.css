@@ -56,3 +56,73 @@ p{
 .purple{
   background-color: #E633FF;
 }
+
+#event-form-window{
+  display: none;
+  /* margin-top: 30px;
+  margin-left: 50px; */
+  height: 180px;
+  width: 400px;
+  padding-top: 0px;
+  background-color: rgb(237,238,239);
+  border: 2px solid rgb(187,186,187);
+  border-radius: 20px;
+}
+
+#event-form{
+  padding: 12px;
+  font-size: 12px;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#event-title{
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+#event-location{
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+#event-color{
+  position: absolute;
+  height: 25px;
+  bottom: 8;
+  left: 5;
+}
+
+#submit-btn{
+  font-size: 30px;
+}
+
+.time-s{
+  margin:0;
+  padding:0;
+  display: inline-block;
+  margin-left: 3px;
+  padding-left: 3px;
+  margin-right: 5px;
+}
+.time-e{
+  margin:0;
+  padding:0;
+  display: inline-block;
+  margin-left: 3px;
+  padding-left: 3px;
+  margin-right: 10px;
+}
+
+.event-date{
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.color-opt{
+  height: 3px;
+  width: 3px;
+}
