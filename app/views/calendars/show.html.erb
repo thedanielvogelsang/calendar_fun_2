@@ -14,9 +14,10 @@
   <form id="event-form">
     <input id="event-title" onfocus="this.value=''" onblur="if(this.value==''){this.value='New Event'}" type="text" value="New Event">
     <select id="event-color" size="1">
-      <option id="red" value="red">Red</option>
-      <option id="blue" value="blue">Blue</option>
-      <option id="purple" value="purple">Purple</option>
+      <option value="" selected disabled hidden>Event Color</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
     </select><br>
     <input id="event-location" onfocus="this.value=''" onblur="if(this.value==''){this.value='Add Location'}" type="text" value="Add Location"></br>
     <p class="time-s">Start Time</p>
@@ -81,7 +82,7 @@
       <option value="AM">AM</option>
       <option value="PM">PM</option>
     </select></br>
-    <input id="submit-btn" type="submit" style="height:60px;width:60px">
+    <input id="submit-btn" type="submit" style="height:20px;width:60px">
   </form>
 </div>
 <div class="calendar-body">
@@ -92,7 +93,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Sun" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
@@ -111,7 +112,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Mon" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events[0..1].map do |e| %>
           <% if e %>
@@ -130,7 +131,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Tue" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
@@ -149,7 +150,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Wed" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
@@ -168,7 +169,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Thu" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
@@ -187,7 +188,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Fri" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
@@ -206,7 +207,7 @@
     <% @calendar.days.map do |d| %>
     <% if d.day == "Sat" %>
     <tr>
-      <td>
+      <td class="<%= d.id %>">
         <h4><%= d.date %><h4>
         <% d.events.map do |e| %>
           <% if e %>
