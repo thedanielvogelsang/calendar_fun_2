@@ -1,3 +1,31 @@
 .calendar-title-bar{
-  background-color: red;
+  background-color: rgb(255,255,255);
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.calendar-title-bar ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.month-specs li{
+  padding-top: 0px;
+  line-height: 60px;
+  font-family: 'Myriad Pro Light', "Myriad Pro", sans-serif;
+  font-size: 30px;
+}
+
+li.bold-lettering{
+  font-weight: 400;
+}
+
+li.thin-lettering{
+  font-weight: 300;
+}
+
+li.month-name{
+  float: left;
 }
