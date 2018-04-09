@@ -100,6 +100,16 @@
   border-radius: 5px;
 }
 
+.day-year-month-buttons li:not(:first-child){
+  border-left: 2px solid rgb(222,220,222);
+}
+
+.day-year-month-buttons li{
+  float: left;
+  line-height: 30px;
+  padding: 0px 16px;
+}
+
 li.active{
   color: rgb(255,255,255);
   background-color: rgb(94,94,94);
