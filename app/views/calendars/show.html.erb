@@ -9,3 +9,24 @@
     <li class='month-changer'><%= link_to ">", calendar_path(@calendar.id + 1), :class => 'month-changer-link' %></li>
   </ul>
 </div>
+<div class="calendar-body">
+  <table class="weekday-table">
+    <tr>
+      <th>Mon</th>
+    </tr>
+    <% @calendar.days.map do |d| %>
+    <% if d.day == "Mon" %>
+    <tr>
+      <td>
+        <h4><%= d.date %><h4>
+        <% d.events.map do |e| %>
+          <% if e %>
+            <p> <%= e.title %></p>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    <% end %>
+  </table>
+</div>
