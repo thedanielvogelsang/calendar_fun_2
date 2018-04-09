@@ -1,0 +1,11 @@
+<div class="calendar-title-bar">
+  <ul class="month-specs">
+    <li class="bold-lettering month-name"><%= @calendar.month %></li>
+    <li class="thin-lettering month-name"><%= @calendar.year %></li>
+  </ul>
+  <ul class='month-changers'>
+    <li class='month-changer'><%= link_to "<", calendar_path(@calendar.id - 1), :class => 'month-changer-link' %></li>
+    <li class='month-changer'><button onclick="alert('Calendar temporarily offline')">Today</button></li>
+    <li class='month-changer'><%= link_to ">", calendar_path(@calendar.id + 1), :class => 'month-changer-link' %></li>
+  </ul>
+</div>
