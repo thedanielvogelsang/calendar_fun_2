@@ -1,7 +1,73 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+oct = Calendar.create(month: "October", year: 2017)
+nov = Calendar.create(month: "November", year: 2017)
+
+Day.create(month: "October", day: 'Sun', date: 1, calendar_id: 1)
+Day.create(month: "October", day: 'Mon', date: 2, calendar_id: 1)
+Day.create(month: "October", day: 'Tue', date: 3, calendar_id: 1)
+Day.create(month: "October", day: 'Wed', date: 4, calendar_id: 1)
+Day.create(month: "October", day: 'Thu', date: 5, calendar_id: 1)
+Day.create(month: "October", day: 'Fri', date: 6, calendar_id: 1)
+Day.create(month: "October", day: 'Sat', date: 7, calendar_id: 1)
+Day.create(month: "October", day: 'Sun', date: 8, calendar_id: 1)
+Day.create(month: "October", day: 'Mon', date: 9, calendar_id: 1)
+Day.create(month: "October", day: 'Tue', date: 10, calendar_id: 1)
+Day.create(month: "October", day: 'Wed', date: 11, calendar_id: 1)
+Day.create(month: "October", day: 'Thu', date: 12, calendar_id: 1)
+Day.create(month: "October", day: 'Fri', date: 13, calendar_id: 1)
+Day.create(month: "October", day: 'Sat', date: 14, calendar_id: 1)
+Day.create(month: "October", day: 'Sun', date: 15, calendar_id: 1)
+Day.create(month: "October", day: 'Mon', date: 16, calendar_id: 1)
+Day.create(month: "October", day: 'Tue', date: 17, calendar_id: 1)
+Day.create(month: "October", day: 'Wed', date: 18, calendar_id: 1)
+Day.create(month: "October", day: 'Thu', date: 19, calendar_id: 1)
+Day.create(month: "October", day: 'Fri', date: 20, calendar_id: 1)
+Day.create(month: "October", day: 'Sat', date: 21, calendar_id: 1)
+Day.create(month: "October", day: 'Sun', date: 22, calendar_id: 1)
+Day.create(month: "October", day: 'Mon', date: 23, calendar_id: 1)
+Day.create(month: "October", day: 'Tue', date: 24, calendar_id: 1)
+Day.create(month: "October", day: 'Wed', date: 25, calendar_id: 1)
+Day.create(month: "October", day: 'Thu', date: 26, calendar_id: 1)
+Day.create(month: "October", day: 'Fri', date: 27, calendar_id: 1)
+Day.create(month: "October", day: 'Sat', date: 28, calendar_id: 1)
+Day.create(month: "October", day: 'Sun', date: 29, calendar_id: 1)
+Day.create(month: "October", day: 'Mon', date: 30, calendar_id: 1)
+Day.create(month: "October", day: 'Tue', date: 31, calendar_id: 1)
+
+Day.create(month: "November", day: 'Wed', date: 1, calendar_id: 2)
+Day.create(month: "November", day: 'Thu', date: 2, calendar_id: 2)
+Day.create(month: "November", day: 'Fri', date: 3, calendar_id: 2)
+Day.create(month: "November", day: 'Sat', date: 4, calendar_id: 2)
+Day.create(month: "November", day: 'Sun', date: 5, calendar_id: 2)
+Day.create(month: "November", day: 'Mon', date: 6, calendar_id: 2)
+Day.create(month: "November", day: 'Tue', date: 7, calendar_id: 2)
+Day.create(month: "November", day: 'Wed', date: 8, calendar_id: 2)
+Day.create(month: "November", day: 'Thu', date: 9, calendar_id: 2)
+Day.create(month: "November", day: 'Fri', date: 10, calendar_id: 2)
+Day.create(month: "November", day: 'Sat', date: 11, calendar_id: 2)
+Day.create(month: "November", day: 'Sun', date: 12, calendar_id: 2)
+Day.create(month: "November", day: 'Mon', date: 13, calendar_id: 2)
+Day.create(month: "November", day: 'Tue', date: 14, calendar_id: 2)
+Day.create(month: "November", day: 'Wed', date: 15, calendar_id: 2)
+Day.create(month: "November", day: 'Thu', date: 16, calendar_id: 2)
+Day.create(month: "November", day: 'Fri', date: 17, calendar_id: 2)
+Day.create(month: "November", day: 'Sat', date: 18, calendar_id: 2)
+Day.create(month: "November", day: 'Sun', date: 19, calendar_id: 2)
+Day.create(month: "November", day: 'Mon', date: 20, calendar_id: 2)
+Day.create(month: "November", day: 'Tue', date: 21, calendar_id: 2)
+Day.create(month: "November", day: 'Wed', date: 22, calendar_id: 2)
+Day.create(month: "November", day: 'Thu', date: 23, calendar_id: 2)
+Day.create(month: "November", day: 'Fri', date: 24, calendar_id: 2)
+Day.create(month: "November", day: 'Sat', date: 25, calendar_id: 2)
+Day.create(month: "November", day: 'Sun', date: 26, calendar_id: 2)
+Day.create(month: "November", day: 'Mon', date: 27, calendar_id: 2)
+Day.create(month: "November", day: 'Tue', date: 28, calendar_id: 2)
+Day.create(month: "November", day: 'Wed', date: 29, calendar_id: 2)
+Day.create(month: "November", day: 'Thu', date: 30, calendar_id: 2)
+
+Day.all.map do |day|
+  if day.month == "October"
+    oct.days << day
+  elsif day.month == "November"
+    nov.days << day
+  end
+end
