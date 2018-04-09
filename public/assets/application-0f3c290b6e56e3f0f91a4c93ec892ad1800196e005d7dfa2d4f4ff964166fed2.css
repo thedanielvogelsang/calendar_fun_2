@@ -1,0 +1,71 @@
+.nav-left-buttons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-left-buttons li.cls-icon{
+  float: left;
+  padding: 5px 3px;
+}
+
+.nav-left-buttons li.calendar-btn{
+  float: left;
+  padding: 0px 3px;
+}
+
+.nav-left-buttons li{
+  float: left;
+}
+
+.close-icons{
+  list-style-type: none;
+}
+
+.red-close{
+  display: block;
+  background-color: rgb(245,74,64);
+}
+.green-close{
+  display: block;
+  background-color: rgb(31,198,67);
+}
+.yellow-close{
+  display: block;
+  background-color: rgb(245,153,54);
+}
+
+.close-icon{
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(187,186,187);
+  border-radius: 7px;
+}
+
+.cls-icon{
+  padding: 5px;
+  margin-top: 2px;
+}
+
+#plus-btn-nav{
+  margin-top: 4px;
+  width: 27px;
+  height: 25px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

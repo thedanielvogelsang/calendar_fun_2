@@ -1,0 +1,116 @@
+.nav-left-buttons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-left-buttons li.cls-icon{
+  float: left;
+  padding: 5px 3px;
+}
+
+.nav-left-buttons li.calendar-btn{
+  float: left;
+  padding: 0px 3px;
+}
+
+.nav-left-buttons li{
+  float: left;
+}
+
+.close-icons{
+  list-style-type: none;
+}
+
+.red-close{
+  display: block;
+  background-color: rgb(245,74,64);
+}
+.green-close{
+  display: block;
+  background-color: rgb(31,198,67);
+}
+.yellow-close{
+  display: block;
+  background-color: rgb(245,153,54);
+}
+
+.close-icon{
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(187,186,187);
+  border-radius: 7px;
+}
+
+.cls-icon{
+  padding: 5px;
+  margin-top: 2px;
+}
+
+#plus-btn-nav{
+  margin-top: 4px;
+  width: 27px;
+  height: 25px;
+}
+
+#navbar ul{
+  padding-left: 5px;
+  margin-left: 0px;
+}
+
+#calendar-btn-nav{
+  width: 120px;
+  height: 25px;
+  margin-top: 4px;
+  margin-left: 0px;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#navbar{
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgb(187,186,187);
+  background-color: rgb(222,220,222);
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+#search-field{
+  margin-top: 2px;
+  width: 250px;
+  height: 30px;
+}
+
+.day-year-month-buttons{
+  list-style-type: none;
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 40px;
+  padding: 0;
+  background-color: rgb(255,255,255);
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(94,95,96);
+  height: 30px;
+  border: 1px solid rgb(187,186,187);
+  border-radius: 5px;
+}
+
+.day-year-month-buttons li:not(:first-child){
+  border-left: 2px solid rgb(222,220,222);
+}
+
+.day-year-month-buttons li{
+  float: left;
+  line-height: 30px;
+  padding: 0px 16px;
+}
+
+li.active{
+  color: rgb(255,255,255);
+  background-color: rgb(94,94,94);
+}
