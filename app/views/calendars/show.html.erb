@@ -38,7 +38,7 @@
     <tr>
       <td>
         <h4><%= d.date %><h4>
-        <% d.events.map do |e| %>
+        <% d.events[0..1].map do |e| %>
           <% if e %>
             <p class="<%= e.color %>"> <%= e.title %></p>
           <% end %>
