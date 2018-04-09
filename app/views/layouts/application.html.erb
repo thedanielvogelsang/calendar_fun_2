@@ -26,6 +26,14 @@
         <li class="calendar-btn">
           <%= image_tag("plusButton", :id => "plus-btn-nav")%>
         </li>
+      </ul>
+      <ul class="day-year-month-buttons">
+        <li>Day</li>
+        <li>Week</li>
+        <li>Month</li>
+        <li>Year</li>
+      </ul>
+      <%= image_tag("search_field", id: "search-field") %>
     </nav>
     <%= yield %>
   </body>
